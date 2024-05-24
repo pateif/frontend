@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Seating Plan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Airline Seating Plan</h1>
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-button">Login</button>
+        <p id="login-error" class="error"></p>
+    </div>
+    <div id="seating-chart-container" style="display: none;">
+        <select id="plane-selector">
+            <option value="plane1">Plane 1</option>
+            <option value="plane2">Plane 2</option>
+        </select>
+        <div id="seating-chart"></div>
+        <button id="book-seats">Book Selected Seats</button>
+    </div>
+    <div id="payment-form" style="display: none;">
+        <h2>Payment</h2>
+        <input type="text" id="card-number" placeholder="Card Number">
+        <input type="text" id="card-expiry" placeholder="Expiry Date (MM/YY)">
+        <input type="text" id="card-cvc" placeholder="CVC">
+        <button id="pay-button">Pay</button>
+        <p id="payment-error" class="error"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
